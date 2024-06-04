@@ -1,0 +1,12 @@
+.book-shelf{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.heading{
+    color: #000000;
+    font-size: 22px;
+    align-self: center;
+}
