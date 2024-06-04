@@ -40,7 +40,6 @@ class Books extends Component {
             this.setState({apiStatus: apiStatusConstants.failure})
         }
         
-        
     }
 
     onSearch = event => this.setState({searchValue: event.target.value})

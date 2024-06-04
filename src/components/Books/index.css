@@ -65,3 +65,15 @@
 .nav-link{
     text-decoration: none;
 }
+
+@media screen and (max-width: 576px){
+    .search-bar{
+        width: 150px;
+    }
+    .shelf-btn{
+        padding: 10px;
+    }
+    .search-heading{
+        font-size: 18px;
+    }
+}
