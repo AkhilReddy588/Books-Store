@@ -11,7 +11,6 @@ class BookCard extends Component {
       editionCount: item.edition_count,
     }
 
-
     const bookshelf = JSON.parse(localStorage.getItem('bookshelf')) || []
     const existingBookIndex = bookshelf.findIndex(
       (book) => book.title === updatedBook.title && book.editionCount === updatedBook.editionCount
@@ -20,12 +19,10 @@ class BookCard extends Component {
     if (existingBookIndex === -1) {
       bookshelf.push(updatedBook);
       localStorage.setItem('bookshelf', JSON.stringify(bookshelf))
-      this.setState({ show: false });
-  
+      this.setState({ show: false })
     } else {
-      console.log('Book already exists in the bookshelf.');
+      console.log('Book already exists in the bookshelf.')
     }
-
 
     this.setState({show: false})
   }
